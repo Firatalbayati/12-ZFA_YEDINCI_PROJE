@@ -1,0 +1,8 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_YEDINCI_PROJE_SCRN
+*&---------------------------------------------------------------------*
+SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE text-001.
+
+SELECT-OPTIONS : s_matnr FOR mara-matnr NO-EXTENSION.
+
+SELECTION-SCREEN END OF BLOCK b1.

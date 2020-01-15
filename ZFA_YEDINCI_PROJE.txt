@@ -1,0 +1,23 @@
+
+REPORT zfa_yedinci_proje.
+
+INCLUDE zfa_yedinci_proje_top.
+INCLUDE zfa_yedinci_proje_scrn.
+INCLUDE zfa_yedinci_proje_f01.
+INCLUDE zfa_yedinci_proje_alv.
+
+
+AT SELECTION-SCREEN.
+
+
+AT SELECTION-SCREEN OUTPUT.
+*  PERFORM modify_screen.
+
+*AT SELECTION-SCREEN ON VALUE-REQUEST FOR s_ad.
+*   PERFORM CHANGE_NAME.
+
+START-OF-SELECTION.
+  PERFORM get_data.
+
+END-OF-SELECTION.
+  PERFORM display.

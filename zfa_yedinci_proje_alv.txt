@@ -1,0 +1,25 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_YEDINCI_PROJE_ALV
+*&---------------------------------------------------------------------*
+FORM DISPLAY.
+
+    CALL FUNCTION 'REUSE_ALV_GRID_DISPLAY'
+    EXPORTING
+      i_callback_program = sy-repid
+      i_structure_name   = 'Z11_ALV_ODEV5'
+*     is_layout          = ls_layout
+*     it_fieldcat        = it_fieldcat
+*   IMPORTING
+*     E_EXIT_CAUSED_BY_CALLER       =
+*     ES_EXIT_CAUSED_BY_USER        =
+    TABLES
+      t_outtab           = lt_table
+*   EXCEPTIONS
+*     PROGRAM_ERROR      = 1
+*     OTHERS             = 2
+    .
+  IF sy-subrc <> 0.
+* Implement suitable error handling here
+  ENDIF.
+
+ENDFORM.

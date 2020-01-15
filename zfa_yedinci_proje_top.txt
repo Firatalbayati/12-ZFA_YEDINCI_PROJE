@@ -1,0 +1,9 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_YEDINCI_PROJE_TOP
+*&---------------------------------------------------------------------*
+TYPE-POOLS slis.
+
+TABLES : mara, " bunu yazarsak data : g_matnr type mara-matnr. ye kullanmaya gerek yok direkt SELECT-OPTIONS : s_matnr FOR mara-matnr şeklinde yazarız
+         mchb.
+
+DATA : lt_table TYPE TABLE OF z11_alv_odev5.

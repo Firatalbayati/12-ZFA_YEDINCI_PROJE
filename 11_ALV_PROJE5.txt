@@ -1,0 +1,12 @@
+Seçim Ekrani
+mara-matnr(Programdan çikip tekrar girdigimde son girdigim deger kaybolmasin(variant)) (kaydetme islemi)
+
+
+Liste ekrani
+mara-matnr
+MCHB-CLABS(mara-matnr = MCHB-matnr)
+MCHB-CINSM(mara-matnr = MCHB-matnr)
+MCHB-CSPEM(mara-matnr = MCHB-matnr)
+MCHB-CEINM(mara-matnr = MCHB-matnr)
+
+Bu rapor malzeme bazinda stoklari getirecek bize

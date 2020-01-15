@@ -1,0 +1,15 @@
+*&---------------------------------------------------------------------*
+*&  Include           ZFA_YEDINCI_PROJE_F01
+*&---------------------------------------------------------------------*
+FORM GET_DATA.
+
+    SELECT mara~matnr
+         mchb~clabs
+         mchb~cinsm
+         mchb~cspem
+         mchb~ceinm
+    FROM mara  INNER JOIN mchb ON mara~matnr EQ mchb~matnr
+    INTO TABLE lt_table
+    WHERE mara~matnr  IN s_matnr.
+
+ENDFORM.
